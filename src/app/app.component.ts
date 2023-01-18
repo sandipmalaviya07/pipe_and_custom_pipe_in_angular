@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pipes-demo';
+
+  dateToday: string = "";
+  name: string = "";
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+    this.dateToday = new Date().toDateString();
+
+    this.name = "Samarpan";
+
+  }
+  
 }
